@@ -1,0 +1,30 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h4>Apply Leave</h4>
+@using (Html.BeginForm()) {
+    <div>
+        <label>Leave Type</label>
+        <select name="leaveType">
+            <option>Casual</option>
+            <option>Sick</option>
+            <option>Earned</option>
+        </select>
+    </div>
+    <div>
+        <label>Start Date</label>
+        <input type="date" name="startDate" />
+    </div>
+    <div>
+        <label>End Date</label>
+        <input type="date" name="endDate" />
+    </div>
+    <div>
+        <label>Reason</label>
+        <textarea name="reason"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+}
+@if(ViewBag.Message != null) {
+    <div>@ViewBag.Message</div>
+}
