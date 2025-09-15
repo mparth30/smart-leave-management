@@ -15,4 +15,4 @@ This is a simple skeleton of a Smart Leave Management System built with ASP.NET 
 5. Update the connection string in `Web.config`.\
 6. Build and run the project (IIS Express).\
 \
-> Note: This repository is a simple starting point and not production-ready. Extend for validation, security, EF migrations, and email integration.\
+> Note: This repository is a simple starting point and not production-ready. Extend for validation, security, EF migrations, and email integration
